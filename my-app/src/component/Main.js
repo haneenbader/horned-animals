@@ -1,16 +1,10 @@
 import React from 'react'
 import HornedBeast from './HornedBeast.js'
-import Data from '../assest/data.json'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class Main extends React.Component {
-    // pass value from main to hornedbeast
-    constructor(props) {
-        super(props);
-        // change condition in hornedbeast  
-        this.state = {
-            Pictures: Data
-        };
-    }
+    
     render() {
         return (
             this.state.Pictures.map(hornedInfo => {
